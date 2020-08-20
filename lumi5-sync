@@ -1,7 +1,0 @@
-#!/bin/sh
-echo ''
-echo '****************************************************'
-echo '* Updating the Lumi5 Project                       *'
-echo '****************************************************'
-
-sudo rsync -avz /Users/user/Dropbox/js-practice/js-ble/* root@ladvien.com:/usr/share/nginx/html/projects/lumi5

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="script.js"></script>
+<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+<script src="https://www.chartjs.org/samples/latest/utils.js"></script>    
+<script src="plot.js"></script>
+<script src="bluetooth.js"></script>
+<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
 </head>
 <body>
-
-<h1>A Web Page</h1>
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
-
+<button type="connectToBLE" onclick="connectToBLE()">Connect and Plot</button>
+<div style="width:75%;">
+    <canvas id="canvas"></canvas>
+</div>
 </body>
 </html>
